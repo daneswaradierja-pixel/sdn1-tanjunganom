@@ -1,0 +1,1742 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPT SD NEGERI 1 TANJUNG ANOM | Unggul & Berprestasi</title>
+    <meta name="description" content="Website Resmi UPT SD Negeri 1 Tanjung Anom. Mewujudkan Generasi Berakhlak Mulia, Berprestasi, Cerdas Literasi, Terampil Teknologi Digital, Berbudaya, dan Peduli Lingkungan.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: '#0B7A4B',
+                        royal: '#0B4F9C',
+                        gold: '#D4AF37',
+                        darkBg: '#0f172a',
+                        darkCard: '#1e293b'
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                        nunito: ['Nunito', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'hero-pattern': "linear-gradient(rgba(11, 79, 156, 0.45), rgba(11, 122, 75, 0.45)), url('Foto Sekolah UPT SDN 1 Tanjung Anom.png')",
+                        'pattern-light': "url('data:image/svg+xml,%3Csvg width=\\'60\\' height=\\'60\\' viewBox=\\'0 0 60 60\\' xmlns=\\'http://www.w3.org/2000/svg\\'%3E%3Cg fill=\\'none\\' fill-rule=\\'evenodd\\'%3E%3Cg fill=\\'%230b7a4b\\' fill-opacity=\\'0.04\\'%3E%3Cpath d=\\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')",
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body { font-family: 'Nunito', sans-serif; }
+        h1, h2, h3, h4, h5, h6, .font-poppins { font-family: 'Poppins', sans-serif; }
+        
+        .masonry-grid {
+            column-count: 1;
+            column-gap: 1.5rem;
+        }
+        @media (min-width: 640px) { .masonry-grid { column-count: 2; } }
+        @media (min-width: 1024px) { .masonry-grid { column-count: 3; } }
+        
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 1.5rem;
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #0B7A4B, #0B4F9C);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 2px;
+            background-color: #e5e7eb;
+            transform: translateX(-50%);
+        }
+        @media (max-width: 768px) {
+            .timeline-line::before { left: 24px; }
+        }
+
+        @keyframes pulse-wa {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+        .btn-wa { animation: pulse-wa 2s infinite; }
+        
+        .hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .hover-lift:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -6px rgba(0, 0, 0, 0.04); }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #0B7A4B; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #0B4F9C; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased overflow-x-hidden transition-colors duration-300 dark:bg-slate-900 dark:text-gray-100">
+
+    <!-- Notification Toast -->
+    <div id="toast" class="fixed top-24 right-4 z-[999] transform translate-x-full transition-transform duration-300 bg-emerald text-white px-6 py-4 rounded-xl shadow-2xl flex items-center gap-3">
+        <span id="toast-icon" class="text-xl"><i class="fas fa-check-circle"></i></span>
+        <span id="toast-msg" class="font-semibold">Aksi Berhasil!</span>
+    </div>
+
+    <!-- Top Info Bar -->
+    <div class="bg-gradient-to-r from-royal to-emerald text-white text-xs py-2 px-4">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span><i class="fas fa-phone-alt text-gold mr-1"></i> 0822-4555-3322</span>
+                <span class="hidden md:inline"><i class="fas fa-envelope text-gold mr-1"></i> sdn1tanjunganom.sch.id</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <span class="bg-gold/20 text-gold px-2 py-0.5 rounded font-bold uppercase tracking-wider text-[10px]">Tahun Ajaran 2026/2027</span>
+                <button onclick="toggleDarkMode()" class="text-white hover:text-gold transition-colors text-sm ml-2">
+                    <i id="theme-icon" class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="sticky top-0 w-full z-50 transition-all duration-300 bg-white/95 backdrop-blur-md shadow-sm dark:bg-slate-900/95 dark:border-b dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-3">
+                    <!-- High quality Vector SVG Logo Fallback -->
+                    <div class="w-12 h-12 bg-royal rounded-full flex items-center justify-center text-white border-2 border-gold shadow-md">
+                       <img src="Logo Sekolah UPT SD N 1 Tanjung Anom.jpeg"class="w-16 h-16 rounded-full object-cover">
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-poppins font-bold text-lg text-royal dark:text-blue-400 leading-tight">SDN 1 TANJUNG ANOM</span>
+                        <span class="text-xs text-emerald dark:text-emerald-400 font-semibold hidden sm:block">Unggul • Berprestasi • Cerdas Teknologi</span>
+                    </div>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center space-x-6">
+                    <a href="#beranda" class="text-gray-700 dark:text-gray-300 hover:text-emerald font-semibold transition-colors">Beranda</a>
+                    <a href="#profil" class="text-gray-700 dark:text-gray-300 hover:text-emerald font-semibold transition-colors">Profil</a>
+                    <a href="#program" class="text-gray-700 dark:text-gray-300 hover:text-emerald font-semibold transition-colors">Program</a>
+                    <a href="#prestasi" class="text-gray-700 dark:text-gray-300 hover:text-emerald font-semibold transition-colors">Prestasi</a>
+                    <a href="#galeri" class="text-gray-700 dark:text-gray-300 hover:text-emerald font-semibold transition-colors">Galeri</a>
+                    <a href="#berita" class="text-gray-700 dark:text-gray-300 hover:text-emerald font-semibold transition-colors">Berita</a>
+                    <button onclick="openPortalModal()" class="text-royal border-2 border-royal/30 px-4 py-2 rounded-full font-bold transition hover:bg-royal/5 dark:text-blue-400 dark:border-blue-400/30 text-sm">Portal Orang Tua</button>
+                    <a href="#ppdb" class="bg-gold hover:bg-yellow-600 text-white px-5 py-2.5 rounded-full font-bold transition-all transform hover:scale-105 shadow-md text-sm">Info PPDB</a>
+                </div>
+
+                <!-- Right Toolbar / Mobile buttons -->
+                <div class="flex items-center gap-2 lg:hidden">
+                    <button onclick="openPortalModal()" class="text-xs px-3 py-1.5 border border-royal/30 rounded-full font-bold text-royal dark:text-blue-400 dark:border-blue-400/30">Portal</button>
+                    <button id="mobile-menu-btn" class="text-gray-700 dark:text-gray-300 hover:text-emerald focus:outline-none p-2">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white dark:bg-slate-900 border-t border-gray-100 dark:border-slate-800 absolute w-full shadow-lg">
+            <div class="px-4 pt-2 pb-6 space-y-2 flex flex-col">
+                <a href="#beranda" class="block px-3 py-3 rounded-md text-base font-semibold text-gray-800 dark:text-gray-200 hover:bg-emerald/10 hover:text-emerald">Beranda</a>
+                <a href="#profil" class="block px-3 py-3 rounded-md text-base font-semibold text-gray-800 dark:text-gray-200 hover:bg-emerald/10 hover:text-emerald">Profil Sekolah</a>
+                <a href="#program" class="block px-3 py-3 rounded-md text-base font-semibold text-gray-800 dark:text-gray-200 hover:bg-emerald/10 hover:text-emerald">Program Unggulan</a>
+                <a href="#prestasi" class="block px-3 py-3 rounded-md text-base font-semibold text-gray-800 dark:text-gray-200 hover:bg-emerald/10 hover:text-emerald">Prestasi</a>
+                <a href="#galeri" class="block px-3 py-3 rounded-md text-base font-semibold text-gray-800 dark:text-gray-200 hover:bg-emerald/10 hover:text-emerald">Galeri</a>
+                <a href="#berita" class="block px-3 py-3 rounded-md text-base font-semibold text-gray-800 dark:text-gray-200 hover:bg-emerald/10 hover:text-emerald">Berita</a>
+                <button onclick="openPortalModal(); document.getElementById('mobile-menu').classList.add('hidden')" class="w-full text-left px-3 py-3 rounded-md text-base font-semibold text-royal hover:bg-royal/10">Portal Orang Tua / Admin</button>
+                <a href="#ppdb" class="block px-3 py-3 mt-2 text-center rounded-md text-base font-bold text-white bg-gold">PPDB Online</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="relative min-h-screen flex items-center justify-center bg-hero-pattern bg-cover bg-center bg-fixed bg-no-repeat pt-10">
+        <div class="absolute inset-0 bg-gradient-to-b from-royal/80 via-royal/60 to-emerald/85 mix-blend-multiply"></div>
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto mt-10">
+            <span class="inline-block py-1 px-4 rounded-full bg-gold/20 text-gold border border-gold/50 backdrop-blur-sm text-xs md:text-sm font-bold tracking-wider mb-6" data-aos="fade-down">SEKOLAH PENGGERAK LITERASI & TEKNOLOGI</span>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-tight drop-shadow-lg" data-aos="fade-up" data-aos-delay="100">
+                UPT SD NEGERI 1 <br/> <span class="text-gold">TANJUNG ANOM</span>
+            </h1>
+            <p class="text-base md:text-2xl text-gray-100 mb-10 max-w-3xl mx-auto font-light leading-relaxed drop-shadow-md" data-aos="fade-up" data-aos-delay="200">
+                "Mewujudkan Generasi Berakhlak Mulia, Berprestasi, Cerdas Literasi, Terampil Teknologi Digital, Berbudaya, dan Peduli Lingkungan"
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4" data-aos="fade-up" data-aos-delay="300">
+                <a href="#profil" class="px-8 py-4 bg-emerald hover:bg-green-600 text-white rounded-full font-bold text-lg transition-all shadow-lg shadow-emerald/30 hover:-translate-y-1 flex items-center justify-center gap-2">
+                    <i class="fas fa-building"></i> Profil Sekolah
+                </a>
+                <button onclick="openPPDBWizard()" class="px-8 py-4 bg-gold hover:bg-yellow-500 text-royal rounded-full font-bold text-lg transition-all shadow-lg hover:-translate-y-1 flex items-center justify-center gap-2">
+                    <i class="fas fa-user-graduate"></i> PPDB 2026/2027
+                </button>
+                <a href="#kontak" class="px-8 py-4 border-2 border-white/50 hover:bg-white hover:text-royal text-white rounded-full font-bold text-lg transition-all backdrop-blur-sm flex items-center justify-center gap-2">
+                    <i class="fas fa-phone"></i> Hubungi Kami
+                </a>
+            </div>
+        </div>
+
+        <!-- Wave Divider -->
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
+            <svg class="relative block w-full h-[50px] md:h-[100px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118,130.83,121.22,201.2,116.7,243.6,114,283.47,101.4,321.39,56.44Z" class="fill-gray-50 dark:fill-slate-900"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-gray-50 dark:bg-slate-900 relative z-20 pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 md:-mt-24">
+            <div class="bg-white dark:bg-slate-800 rounded-2xl shadow-xl p-8 grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-gray-100 dark:divide-slate-700 border border-gray-100 dark:border-slate-700" data-aos="fade-up" data-aos-delay="400">
+                <div class="text-center px-4">
+                    <div class="text-emerald text-3xl mb-2"><i class="fas fa-users"></i></div>
+                    <h3 class="text-4xl font-extrabold text-gray-800 dark:text-gray-100 font-poppins"><span class="counter" id="stat-students" data-target="187">0</span></h3>
+                    <p class="text-gray-500 dark:text-gray-400 font-semibold mt-1">Peserta Didik</p>
+                </div>
+                <div class="text-center px-4">
+                    <div class="text-royal text-3xl mb-2"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <h3 class="text-4xl font-extrabold text-gray-800 dark:text-gray-100 font-poppins"><span class="counter" id="stat-teachers" data-target="14">0</span></h3>
+                    <p class="text-gray-500 dark:text-gray-400 font-semibold mt-1">Guru & Staf</p>
+                </div>
+                <div class="text-center px-4">
+                    <div class="text-gold text-3xl mb-2"><i class="fas fa-door-open"></i></div>
+                    <h3 class="text-4xl font-extrabold text-gray-800 dark:text-gray-100 font-poppins"><span class="counter" id="stat-classes" data-target="8">0</span></h3>
+                    <p class="text-gray-500 dark:text-gray-400 font-semibold mt-1">Rombongan Belajar</p>
+                </div>
+                <div class="text-center px-4 animate-pulse">
+                    <div class="text-emerald text-3xl mb-2"><i class="fas fa-medal"></i></div>
+                    <h3 class="text-4xl font-extrabold text-emerald dark:text-emerald-400 font-poppins mt-1" id="stat-accreditation">C</h3>
+                    <p class="text-gold font-bold text-sm mt-1">Akreditasi Utama</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sambutan Kepala Sekolah -->
+    <section class="py-20 bg-white dark:bg-slate-800 bg-pattern-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <!-- Photo with fallback protection -->
+                <div class="w-full lg:w-5/12 relative" data-aos="fade-right">
+                    <div class="absolute inset-0 bg-gold rounded-3xl transform translate-x-4 translate-y-4"></div>
+                    <img id="headmaster-img" src="Kepala Sekolah.jpeg" alt="Arif Wiranata, S.Pd. - Kepala Sekolah" class="relative z-10 w-full h-[500px] object-cover rounded-3xl shadow-2xl border-4 border-white dark:border-slate-700" onerror="this.onerror=null; this.src='foto bersama guru yang juara.jpeg';">
+                    <div class="absolute -bottom-6 -left-6 bg-white dark:bg-slate-700 p-4 rounded-xl shadow-lg z-20 flex items-center gap-4">
+                        <div class="w-12 h-12 bg-emerald rounded-full flex items-center justify-center text-white text-xl">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-gray-800 dark:text-white">Pendidikan Karakter</p>
+                            <p class="text-xs text-gray-500 dark:text-gray-300">Fondasi Masa Depan</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Text -->
+                <div class="w-full lg:w-7/12" data-aos="fade-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-royal/10 text-royal dark:bg-blue-900/40 dark:text-blue-300 font-bold text-sm mb-4">
+                        <i class="fas fa-microphone-alt"></i> Sambutan Kepala Sekolah
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800 dark:text-white mb-6 font-poppins">Selamat Datang di <span class="gradient-text">SDN 1 Tanjung Anom</span></h2>
+                    
+                    <div class="prose prose-lg text-gray-600 dark:text-gray-300 mb-8 space-y-4">
+                        <p class="font-semibold text-gray-800 dark:text-white">Assalamu’alaikum Warahmatullahi Wabarakatuh,<br>Salam sejahtera untuk kita semua.</p>
+                        <p>Selamat datang di website resmi sekolah kami. Portal digital ini dirancang sebagai sarana informasi, layanan PPDB mandiri, transparansi anggaran, serta wadah komunikasi aktif antar siswa, guru, wali murid, dan seluruh elemen masyarakat.</p>
+                        <p>Kami berkomitmen melahirkan tunas bangsa yang berintegritas lewat program 5S dan ekstrakurikuler komprehensif, mulai dari penguatan iman di **Tahfidz Juz Amma**, fisik mental yang tangguh di **Pramuka**, pelestarian adat di kesenian **Angklung**, peningkatan kognitif di **Literasi**, hingga kesiapan industri 4.0 lewat pengenalan kelas **Coding Dasar**.</p>
+                        <p>Mari bekerja sama untuk memajukan pendidikan negeri!</p>
+                    </div>
+                    
+                    <div class="border-l-4 border-gold pl-4 mt-6">
+                        <h4 class="font-bold text-xl text-gray-800 dark:text-white font-poppins">Arif Wiranata, S.Pd.</h4>
+                        <p class="text-emerald dark:text-emerald-400 font-semibold">Kepala UPT SD Negeri 1 Tanjung Anom</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visi Misi -->
+    <section class="py-20 bg-royal text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-emerald/20 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
+        <div class="absolute bottom-0 left-0 w-80 h-80 bg-gold/20 rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-4xl mx-auto mb-16" data-aos="fade-up">
+                <span class="text-gold font-bold tracking-widest uppercase text-sm">Arah & Tujuan</span>
+                <h2 class="text-3xl md:text-5xl font-extrabold font-poppins mt-2 mb-6">Visi & Misi Sekolah</h2>
+                <div class="w-24 h-1 bg-gold mx-auto rounded-full mb-8"></div>
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-2xl shadow-2xl relative">
+                    <i class="fas fa-quote-right absolute top-4 right-6 text-4xl text-white/10"></i>
+                    <h3 class="text-2xl text-gold font-bold mb-4 font-poppins">VISI</h3>
+                    <p class="text-lg md:text-2xl font-light italic leading-relaxed">
+                        "Menjadi sekolah dasar unggul yang menghasilkan generasi berakhlak mulia, berprestasi, cerdas literasi, terampil dalam teknologi digital, berbudaya, serta peduli terhadap lingkungan."
+                    </p>
+                </div>
+            </div>
+
+            <h3 class="text-center text-3xl font-bold font-poppins text-white mb-10" data-aos="fade-up">Misi Sekolah</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Misi Cards -->
+                <div class="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition duration-300 hover-lift" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-12 h-12 bg-emerald/20 rounded-lg flex items-center justify-center text-emerald text-2xl mb-4">
+                        <i class="fas fa-pray"></i>
+                    </div>
+                    <p class="text-gray-200">Menanamkan nilai keimanan, ketakwaan, dan akhlak mulia melalui pembiasaan karakter positif dan program Tahfidz.</p>
+                </div>
+                <div class="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition duration-300 hover-lift" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-12 h-12 bg-gold/20 rounded-lg flex items-center justify-center text-gold text-2xl mb-4">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <p class="text-gray-200">Menyelenggarakan pembelajaran aktif, kreatif, inovatif, dan berpusat pada peserta didik.</p>
+                </div>
+                <div class="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition duration-300 hover-lift" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-12 h-12 bg-emerald/20 rounded-lg flex items-center justify-center text-emerald text-2xl mb-4">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <p class="text-gray-200">Mengembangkan budaya literasi di lingkungan sekolah secara berkesinambungan.</p>
+                </div>
+                <div class="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition duration-300 hover-lift" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-12 h-12 bg-blue-400/20 rounded-lg flex items-center justify-center text-blue-400 text-2xl mb-4">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <p class="text-gray-200">Mengintegrasikan teknologi digital dan coding untuk merangsang computational thinking.</p>
+                </div>
+                <div class="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition duration-300 hover-lift" data-aos="fade-up" data-aos-delay="500">
+                    <div class="w-12 h-12 bg-gold/20 rounded-lg flex items-center justify-center text-gold text-2xl mb-4">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <p class="text-gray-200">Mengembangkan potensi bakat nonakademik olahraga dan kesenian.</p>
+                </div>
+                <div class="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition duration-300 hover-lift" data-aos="fade-up" data-aos-delay="600">
+                    <div class="w-12 h-12 bg-emerald/20 rounded-lg flex items-center justify-center text-emerald text-2xl mb-4">
+                        <i class="fas fa-campground"></i>
+                    </div>
+                    <p class="text-gray-200">Menumbuhkan sikap mandiri dan kerjasama lewat ekstrakurikuler kepramukaan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profil & Identitas -->
+    <section id="profil" class="py-20 bg-gray-50 dark:bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-extrabold font-poppins text-gray-800 dark:text-white">Profil & Identitas Sekolah</h2>
+                <div class="w-24 h-1 bg-emerald mx-auto rounded-full mt-4"></div>
+            </div>
+
+            <div class="relative timeline-line max-w-4xl mx-auto">
+                <!-- Item 1 -->
+                <div class="relative z-10 flex items-center justify-between w-full mb-8 flex-col md:flex-row" data-aos="fade-up">
+                    <div class="order-1 w-full md:w-5/12 hidden md:block"></div>
+                    <div class="order-1 md:order-2 z-20 flex items-center shadow-xl w-12 h-12 bg-emerald rounded-full absolute left-0 md:left-1/2 transform -translate-x-1/2 border-4 border-white justify-center">
+                        <i class="fas fa-id-card text-white"></i>
+                    </div>
+                    <div class="order-1 md:order-3 bg-white dark:bg-slate-800 rounded-xl shadow-lg w-full md:w-5/12 px-6 py-5 pl-16 md:pl-6 hover-lift ml-4 md:ml-0 border dark:border-slate-700">
+                        <h3 class="font-bold text-gray-800 dark:text-white text-xl mb-2 font-poppins">Identitas Utama</h3>
+                        <ul class="text-gray-600 dark:text-gray-300 space-y-2">
+                            <li><strong>Nama:</strong> UPT SD NEGERI 1 TANJUNG ANOM</li>
+                            <li><strong>NPSN:</strong> 10804911</li>
+                            <li><strong>Status:</strong> Negeri</li>
+                            <li><strong>Akreditasi:</strong> <span class="bg-emerald/10 text-emerald dark:text-emerald-400 px-2 py-0.5 rounded font-bold text-sm" id="badge-accreditation">C</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="relative z-10 flex items-center justify-between w-full mb-8 flex-col md:flex-row" data-aos="fade-up">
+                    <div class="order-1 md:order-1 bg-white dark:bg-slate-800 rounded-xl shadow-lg w-full md:w-5/12 px-6 py-5 pl-16 md:pr-6 md:pl-6 hover-lift ml-4 md:ml-0 md:text-right border dark:border-slate-700">
+                        <h3 class="font-bold text-gray-800 dark:text-white text-xl mb-2 font-poppins">Lokasi Sekolah</h3>
+                        <p class="text-gray-600 dark:text-gray-300">Jl. Raya Tanjung Anom, Kecamatan Ambarawa, Kabupaten Pringsewu, Provinsi Lampung.</p>
+                        <a href="#kontak" class="inline-block mt-2 text-sm text-royal dark:text-blue-400 font-bold hover:underline">Lihat Rute Peta <i class="fas fa-arrow-right text-xs ml-1"></i></a>
+                    </div>
+                    <div class="order-1 md:order-2 z-20 flex items-center shadow-xl w-12 h-12 bg-royal rounded-full absolute left-0 md:left-1/2 transform -translate-x-1/2 border-4 border-white justify-center">
+                        <i class="fas fa-map-marker-alt text-white"></i>
+                    </div>
+                    <div class="order-1 w-full md:w-5/12 hidden md:block"></div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="relative z-10 flex items-center justify-between w-full mb-8 flex-col md:flex-row" data-aos="fade-up">
+                    <div class="order-1 w-full md:w-5/12 hidden md:block"></div>
+                    <div class="order-1 md:order-2 z-20 flex items-center shadow-xl w-12 h-12 bg-gold rounded-full absolute left-0 md:left-1/2 transform -translate-x-1/2 border-4 border-white justify-center">
+                        <i class="fas fa-building text-white"></i>
+                    </div>
+                    <div class="order-1 md:order-3 bg-white dark:bg-slate-800 rounded-xl shadow-lg w-full md:w-5/12 px-6 py-5 pl-16 md:pl-6 hover-lift ml-4 md:ml-0 border dark:border-slate-700">
+                        <h3 class="font-bold text-gray-800 dark:text-white text-xl mb-2 font-poppins">Fasilitas Utama</h3>
+                        <div class="flex flex-wrap gap-2 mt-2">
+                            <span class="bg-gray-100 dark:bg-slate-700 text-gray-700 dark:text-gray-200 text-xs px-3 py-1 rounded-full"><i class="fas fa-check text-emerald mr-1"></i> 8 Ruang Kelas Modern</span>
+                            <span class="bg-gray-100 dark:bg-slate-700 text-gray-700 dark:text-gray-200 text-xs px-3 py-1 rounded-full"><i class="fas fa-check text-emerald mr-1"></i> Perpustakaan Cerdas</span>
+                            <span class="bg-gray-100 dark:bg-slate-700 text-gray-700 dark:text-gray-200 text-xs px-3 py-1 rounded-full"><i class="fas fa-check text-emerald mr-1"></i> Laboratorium Komputer</span>
+                            <span class="bg-gray-100 dark:bg-slate-700 text-gray-700 dark:text-gray-200 text-xs px-3 py-1 rounded-full"><i class="fas fa-check text-emerald mr-1"></i> Lapangan Olahraga</span>
+                            <span class="bg-gray-100 dark:bg-slate-700 text-gray-700 dark:text-gray-200 text-xs px-3 py-1 rounded-full"><i class="fas fa-check text-emerald mr-1"></i> Mushola At-Tarbiyah</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Unggulan -->
+    <section id="program" class="py-20 bg-white dark:bg-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <span class="text-emerald font-bold tracking-widest uppercase text-sm">Keunggulan Kami</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold font-poppins text-gray-800 dark:text-white mt-2">Program Unggulan Sekolah</h2>
+                <p class="text-gray-500 dark:text-gray-300 mt-4 max-w-2xl mx-auto">Membentuk karakter spiritual yang luhur serta pengenalan dasar teknologi modern sejak usia dini.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Program 1 -->
+                <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 relative h-80" data-aos="fade-up" data-aos-delay="100">
+                    <img src="tahfid.png" alt="Tahfidz" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/60 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6">
+                        <div class="w-10 h-10 bg-gold rounded-full flex items-center justify-center text-white mb-3 shadow-lg">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2 font-poppins">Tahfidz Juz Amma</h3>
+                        <p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition duration-300 translate-y-4 group-hover:translate-y-0">Pembiasaan hafalan surat-surat pendek sebelum KBM untuk membentuk jiwa spiritual mulia.</p>
+                    </div>
+                </div>
+                
+                <!-- Program 2 -->
+                <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 relative h-80" data-aos="fade-up" data-aos-delay="200">
+                    <img src="Siswa Literasi di Halaman.png" alt="Literasi" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-emerald via-emerald/60 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6">
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-emerald mb-3 shadow-lg">
+                            <i class="fas fa-book-reader"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2 font-poppins">Pojok Literasi Pintar</h3>
+                        <p class="text-gray-100 text-sm opacity-0 group-hover:opacity-100 transition duration-300 translate-y-4 group-hover:translate-y-0">Program wajib membaca 15 menit setiap pagi hari sebelum pembelajaran kelas dimulai.</p>
+                    </div>
+                </div>
+
+                <!-- Program 3 -->
+                <div class="group rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 relative h-80" data-aos="fade-up" data-aos-delay="300">
+                    <img src="SIswa belajar Coding.jpeg" alt="Coding" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-royal via-royal/60 to-transparent"></div>
+                    <div class="absolute bottom-0 left-0 p-6">
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-royal mb-3 shadow-lg">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2 font-poppins">Coding Dasar & Animasi</h3>
+                        <p class="text-gray-100 text-sm opacity-0 group-hover:opacity-100 transition duration-300 translate-y-4 group-hover:translate-y-0">Mengenalkan computational thinking lewat Scratch dan permainan logika komputer dasar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prestasi Sekolah -->
+    <section id="prestasi" class="py-20 bg-gray-50 dark:bg-slate-900 border-t border-gray-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-extrabold font-poppins text-gray-800 dark:text-white">Galeri Prestasi</h2>
+                <div class="w-24 h-1 bg-gold mx-auto rounded-full mt-4"></div>
+                <p class="mt-4 text-gray-600 dark:text-gray-300">Mencetak generasi tangguh dan juara di tingkat Kabupaten hingga Provinsi.</p>
+            </div>
+
+            <!-- Custom Tab Filter -->
+            <div class="flex flex-wrap justify-center gap-4 mb-10" data-aos="fade-up">
+                <button onclick="filterGallery('semua')" id="btn-semua" class="tab-btn px-5 py-2.5 bg-royal text-white rounded-full shadow-md text-sm font-semibold transition">Semua Prestasi</button>
+                <button onclick="filterGallery('akademik')" id="btn-akademik" class="tab-btn px-5 py-2.5 bg-white text-gray-700 dark:bg-slate-800 dark:text-gray-300 rounded-full shadow-sm text-sm font-semibold hover:bg-gray-100 transition">Akademik</button>
+                <button onclick="filterGallery('olahraga')" id="btn-olahraga" class="tab-btn px-5 py-2.5 bg-white text-gray-700 dark:bg-slate-800 dark:text-gray-300 rounded-full shadow-sm text-sm font-semibold hover:bg-gray-100 transition">Olahraga & O2SN</button>
+                <button onclick="filterGallery('seni')" id="btn-seni" class="tab-btn px-5 py-2.5 bg-white text-gray-700 dark:bg-slate-800 dark:text-gray-300 rounded-full shadow-sm text-sm font-semibold hover:bg-gray-100 transition">Seni & Budaya</button>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="prestasi-container">
+                <!-- Prestasi Items -->
+                <div class="bg-white dark:bg-slate-800 rounded-xl shadow-md p-4 text-center hover-lift target-card shadow-lg" data-category="olahraga" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="foto bersama guru yang juara.jpeg" alt="Juara O2SN" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <span class="text-xs bg-emerald/10 text-emerald font-bold px-2 py-1 rounded-full uppercase">Olahraga</span>
+                    <h4 class="font-bold text-gray-800 dark:text-white font-poppins mb-1 mt-2">Juara 1 O2SN Atletik</h4>
+                    <p class="text-xs text-gray-500 dark:text-gray-400">Tingkat Kecamatan Ambarawa 2025</p>
+                </div>
+                <div class="bg-white dark:bg-slate-800 rounded-xl shadow-md p-4 text-center hover-lift target-card shadow-lg" data-category="akademik" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="foto bersama guru yang juara.jpeg" alt="Lomba Kelas" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <span class="text-xs bg-royal/10 text-royal font-bold px-2 py-1 rounded-full uppercase">Akademik</span>
+                    <h4 class="font-bold text-gray-800 dark:text-white font-poppins mb-1 mt-2">Peringkat 1 Cerdas Cermat</h4>
+                    <p class="text-xs text-gray-500 dark:text-gray-400">Festival Sains Ambarawa 2025</p>
+                </div>
+                <div class="bg-white dark:bg-slate-800 rounded-xl shadow-md p-4 text-center hover-lift target-card shadow-lg" data-category="seni" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="juara lomba.jpeg" alt="Penghargaan" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <span class="text-xs bg-gold/20 text-yellow-700 dark:text-gold font-bold px-2 py-1 rounded-full uppercase">Seni</span>
+                    <h4 class="font-bold text-gray-800 dark:text-white font-poppins mb-1 mt-2">Penyaji Angklung Terbaik</h4>
+                    <p class="text-xs text-gray-500 dark:text-gray-400">Hari Pendidikan Kabupaten Pringsewu</p>
+                </div>
+                <div class="bg-white dark:bg-slate-800 rounded-xl shadow-md p-4 text-center hover-lift target-card shadow-lg" data-category="olahraga" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="juara lomba a.jpeg" alt="Juara Sepakbola" class="w-full h-48 object-cover rounded-lg mb-4">
+                    <span class="text-xs bg-emerald/10 text-emerald font-bold px-2 py-1 rounded-full uppercase">Olahraga</span>
+                    <h4 class="font-bold text-gray-800 dark:text-white font-poppins mb-1 mt-2">Juara 3 Turnamen Kid-Soccer</h4>
+                    <p class="text-xs text-gray-500 dark:text-gray-400">Piala KONI Kabupaten Pringsewu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri Kegiatan (Interactive Lightbox) -->
+    <section id="galeri" class="py-20 bg-white dark:bg-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-end mb-12" data-aos="fade-up">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-extrabold font-poppins text-gray-800 dark:text-white">Galeri Kegiatan</h2>
+                    <div class="w-24 h-1 bg-royal mt-4 rounded-full"></div>
+                </div>
+                <span class="text-xs md:text-sm text-gray-500 italic">Klik foto untuk memperbesar</span>
+            </div>
+            <!-- Masonry Grid with functional Lightbox -->
+            <div class="masonry-grid" data-aos="fade-up" data-aos-delay="200">
+                <div onclick="openLightbox('tahfid.png', 'Kegiatan Mengaji Pagi (Tahfidz)')" class="masonry-item rounded-xl overflow-hidden relative group cursor-pointer shadow-md">
+                    <img src="tahfid.png" alt="Tahfidz" class="w-full h-auto object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-4">
+                        <span class="text-white font-poppins font-bold text-sm">Pembiasaan Tahfidz Surat Pendek</span>
+                        <span class="text-xs text-gold"><i class="fas fa-search-plus"></i> Ketuk untuk Zoom</span>
+                    </div>
+                </div>
+                <div onclick="openLightbox('SIswa belajar Coding.jpeg', 'Praktik Coding Interaktif')" class="masonry-item rounded-xl overflow-hidden relative group cursor-pointer shadow-md">
+                    <img src="SIswa belajar Coding.jpeg" alt="Coding" class="w-full h-auto object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-4">
+                        <span class="text-white font-poppins font-bold text-sm">Praktikum Komputer & Algoritma</span>
+                        <span class="text-xs text-gold"><i class="fas fa-search-plus"></i> Ketuk untuk Zoom</span>
+                    </div>
+                </div>
+                <div onclick="openLightbox('Kegiatan Kemah.jpeg', 'Pembelajaran Berbasis Lingkungan (P5)')" class="masonry-item rounded-xl overflow-hidden relative group cursor-pointer shadow-md">
+                    <img src="Kegiatan Kemah.jpeg" alt="P5" class="w-full h-auto object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-4">
+                        <span class="text-white font-poppins font-bold text-sm">Karya Projek P5 Peduli Lingkungan</span>
+                        <span class="text-xs text-gold"><i class="fas fa-search-plus"></i> Ketuk untuk Zoom</span>
+                    </div>
+                </div>
+                <div onclick="openLightbox('foto bersama guru yang juara.jpeg', 'Suasana Upacara Bendera')" class="masonry-item rounded-xl overflow-hidden relative group cursor-pointer shadow-md">
+                    <img src="foto bersama guru yang juara.jpeg" alt="Upacara" class="w-full h-auto object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-4">
+                        <span class="text-white font-poppins font-bold text-sm">Upacara Bendera Khidmat</span>
+                        <span class="text-xs text-gold"><i class="fas fa-search-plus"></i> Ketuk untuk Zoom</span>
+                    </div>
+                </div>
+                <div onclick="openLightbox('Siswa Literasi di Halaman.png', 'Membaca Buku Bersama')" class="masonry-item rounded-xl overflow-hidden relative group cursor-pointer shadow-md">
+                    <img src="Siswa Literasi di Halaman.png" alt="Membaca" class="w-full h-auto object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-4">
+                        <span class="text-white font-poppins font-bold text-sm">Program Sudut Baca Kelas</span>
+                        <span class="text-xs text-gold"><i class="fas fa-search-plus"></i> Ketuk untuk Zoom</span>
+                    </div>
+                </div>
+                <div onclick="openLightbox('Piala 1.jpeg', 'Persiapan Lomba Atletik')" class="masonry-item rounded-xl overflow-hidden relative group cursor-pointer shadow-md">
+                    <img src="Piala 1.jpeg" alt="Lomba" class="w-full h-auto object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-end p-4">
+                        <span class="text-white font-poppins font-bold text-sm">Persiapan Kontingen Lomba Lari</span>
+                        <span class="text-xs text-gold"><i class="fas fa-search-plus"></i> Ketuk untuk Zoom</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Berita Terkini -->
+    <section id="berita" class="py-20 bg-gray-50 dark:bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-extrabold font-poppins text-gray-800 dark:text-white">Berita Terkini</h2>
+                <div class="w-24 h-1 bg-emerald mx-auto rounded-full mt-4"></div>
+            </div>
+
+            <!-- Dynamic News Container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="news-grid-container">
+                <!-- Loaded from state via script -->
+            </div>
+            
+            <div class="text-center mt-12">
+                <button onclick="showToast('Fitur arsip berita sedang dipersiapkan!', 'info')" class="px-8 py-3 bg-emerald hover:bg-green-700 text-white font-bold rounded-full transition shadow-lg">Semua Berita</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info PPDB -->
+    <section id="ppdb" class="py-20 bg-royal text-white relative">
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <span class="bg-gold text-royal font-bold px-4 py-1 rounded-full text-xs inline-block mb-4">Penerimaan Siswa Baru</span>
+                    <h2 class="text-4xl lg:text-5xl font-extrabold font-poppins mb-6">PPDB Tahun Ajaran 2026/2027</h2>
+                    <p class="text-lg text-gray-200 mb-8 leading-relaxed">Bergabunglah bersama UPT SD Negeri 1 Tanjung Anom dan jadilah bagian dari generasi unggul, terampil coding digital, literasi cerdas, dan berakhlak mulia.</p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-full bg-emerald flex items-center justify-center shrink-0 mt-1"><i class="fas fa-calendar-check text-xs"></i></div>
+                            <div>
+                                <h4 class="font-bold text-lg">Pendaftaran Gelombang Mandiri</h4>
+                                <p class="text-gray-300 text-sm">1 Mei - 30 Juni 2026</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-8 h-8 rounded-full bg-gold text-royal flex items-center justify-center shrink-0 mt-1"><i class="fas fa-file-signature text-xs"></i></div>
+                            <div>
+                                <h4 class="font-bold text-lg">Persyaratan Pendaftaran</h4>
+                                <p class="text-gray-300 text-sm">Usia minimal 6 tahun pada Juli 2026, FC KK, FC Akta Kelahiran, Pas Foto Berwarna.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button onclick="openPPDBWizard()" class="inline-block px-8 py-4 bg-gold hover:bg-yellow-500 text-royal font-bold rounded-full text-lg shadow-xl hover:-translate-y-1 transition duration-300">
+                        <i class="fas fa-edit mr-2"></i> Isi Formulir PPDB Online
+                    </button>
+                </div>
+                
+                <!-- Alur PPDB -->
+                <div class="bg-white rounded-2xl p-8 shadow-2xl text-gray-800" data-aos="fade-left">
+                    <h3 class="text-2xl font-bold font-poppins text-center mb-8 text-royal border-b border-gray-200 pb-4">Alur Pendaftaran Online</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-royal/10 text-royal flex items-center justify-center font-bold text-xl shrink-0 border border-royal/20">1</div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Isi Formulir Mandiri</h4>
+                                <p class="text-sm text-gray-500">Isi data lengkap calon siswa & wali via tombol daftar.</p>
+                            </div>
+                        </div>
+                        <div class="w-0.5 h-6 bg-gray-200 ml-6"></div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-royal/10 text-royal flex items-center justify-center font-bold text-xl shrink-0 border border-royal/20">2</div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Simulasi Dokumen</h4>
+                                <p class="text-sm text-gray-500">Upload simulasi KK dan Akta dalam wizard pendaftaran.</p>
+                            </div>
+                        </div>
+                        <div class="w-0.5 h-6 bg-gray-200 ml-6"></div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-royal/10 text-royal flex items-center justify-center font-bold text-xl shrink-0 border border-royal/20">3</div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Simpan Nomor Registrasi</h4>
+                                <p class="text-sm text-gray-500">Cetak kartu digital berisi kode pendaftaran unik Anda.</p>
+                            </div>
+                        </div>
+                        <div class="w-0.5 h-6 bg-gray-200 ml-6"></div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-emerald text-white flex items-center justify-center font-bold text-xl shrink-0 shadow-md">4</div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Cek Hasil Kelulusan</h4>
+                                <p class="text-sm text-gray-500">Pantau status pendaftaran live di portal orang tua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transparansi & Link Terkait -->
+    <section class="py-16 bg-white dark:bg-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl font-bold font-poppins text-gray-800 dark:text-white mb-8">Transparansi & Layanan Publik</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <button onclick="showToast('File laporan BOS Q1-Q2 2026 diunduh! (Simulasi)', 'success')" class="flex flex-col items-center p-6 bg-gray-50 dark:bg-slate-700 rounded-xl border border-gray-100 dark:border-slate-600 hover:border-emerald hover:shadow-md transition">
+                    <i class="fas fa-chart-pie text-4xl text-emerald mb-4"></i>
+                    <h4 class="font-bold text-gray-800 dark:text-white">Laporan Dana BOS</h4>
+                </button>
+                <button onclick="showToast('Dokumen Program Kerja Jangka Panjang diunduh! (Simulasi)', 'success')" class="flex flex-col items-center p-6 bg-gray-50 dark:bg-slate-700 rounded-xl border border-gray-100 dark:border-slate-600 hover:border-royal hover:shadow-md transition">
+                    <i class="fas fa-clipboard-list text-4xl text-royal mb-4"></i>
+                    <h4 class="font-bold text-gray-800 dark:text-white">Program Kerja Sekolah</h4>
+                </button>
+                <button onclick="showToast('Buku Kurikulum Merdeka Terintegrasi diunduh! (Simulasi)', 'success')" class="flex flex-col items-center p-6 bg-gray-50 dark:bg-slate-700 rounded-xl border border-gray-100 dark:border-slate-600 hover:border-gold hover:shadow-md transition">
+                    <i class="fas fa-file-alt text-4xl text-gold mb-4"></i>
+                    <h4 class="font-bold text-gray-800 dark:text-white">Dokumen Kurikulum</h4>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map & Kontak -->
+    <section id="kontak" class="py-0 relative">
+        <div class="flex flex-col lg:flex-row">
+            <!-- Map -->
+            <div class="w-full lg:w-1/2 h-[400px] lg:h-auto bg-gray-200">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.1818274332964!2d104.99222417435133!3d-5.38927909459039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e472df7eeccda17%3A0xc00fbe9bc5e59cc9!2sTanjung%20Anom%2C%20Ambarawa%2C%20Pringsewu%20Regency%2C%20Lampung!5e0!3m2!1sen!2sid!4v1718000000000!5m2!1sen!2sid" class="w-full h-full border-0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="w-full lg:w-1/2 bg-emerald p-12 lg:p-20 text-white flex flex-col justify-center">
+                <h2 class="text-3xl font-extrabold font-poppins mb-6">Hubungi Kami</h2>
+                <p class="mb-8 text-emerald-100">Kami siap melayani kebutuhan informasi pendaftaran siswa baru dan program sekolah. Silakan hubungi tim kami.</p>
+                
+                <ul class="space-y-6">
+                    <li class="flex items-start gap-4">
+                        <i class="fas fa-map-marker-alt text-2xl text-gold mt-1"></i>
+                        <div>
+                            <h4 class="font-bold font-poppins text-lg">Alamat Lengkap</h4>
+                            <p class="text-emerald-50">Jl. Raya Tanjung Anom, Kecamatan Ambarawa,<br>Kabupaten Pringsewu, Provinsi Lampung, 35376.</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <i class="fab fa-whatsapp text-2xl text-gold mt-1"></i>
+                        <div>
+                            <h4 class="font-bold font-poppins text-lg">WhatsApp Layanan Mandiri</h4>
+                            <p class="text-emerald-50">0822-4555-3322</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <i class="fas fa-envelope text-2xl text-gold mt-1"></i>
+                        <div>
+                            <h4 class="font-bold font-poppins text-lg">Email Korespondensi</h4>
+                            <p class="text-emerald-50">sdn1tanjunganom.sch.id</p>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="mt-10 flex gap-4">
+                    <a href="https://facebook.com" class="w-12 h-12 rounded-full bg-white text-emerald flex items-center justify-center text-xl hover:bg-gold hover:text-white transition shadow-lg"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com" class="w-12 h-12 rounded-full bg-white text-emerald flex items-center justify-center text-xl hover:bg-gold hover:text-white transition shadow-lg"><i class="fab fa-instagram"></i></a>
+                    <a href="https://youtube.com" class="w-12 h-12 rounded-full bg-white text-emerald flex items-center justify-center text-xl hover:bg-gold hover:text-white transition shadow-lg"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 border-t-4 border-gold dark:bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-4">
+                    <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center text-royal shadow-lg p-1">
+                        <img src="Logo Sekolah UPT SD N 1 Tanjung Anom.jpeg" class="w-14 h-14 rounded-full object-cover">
+                    </div>
+                    <div>
+                        <h3 class="text-white font-bold font-poppins text-xl">SDN 1 TANJUNG ANOM</h3>
+                        <p class="text-gold text-sm font-semibold tracking-wide">Unggul • Berprestasi • Cerdas Teknologi • Berakhlak Mulia</p>
+                    </div>
+                </div>
+                
+                <div class="flex gap-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-whatsapp fa-lg"></i></a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm">
+                <p>
+© 2026 UPT SD Negeri 1 Tanjung Anom
+</p>
+
+<p class="mt-2 text-gray-400">
+Jl. Raya Tanjung Anom, Kecamatan Ambarawa,
+Kabupaten Pringsewu, Lampung
+</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive PPDB Online Wizard Modal -->
+    <div id="ppdb-wizard-modal" class="fixed inset-0 z-[100] hidden overflow-y-auto bg-slate-900/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white dark:bg-slate-800 rounded-2xl w-full max-w-2xl shadow-2xl overflow-hidden transition-all transform scale-95 duration-300 opacity-0" id="wizard-box">
+            <!-- Modal Header -->
+            <div class="bg-gradient-to-r from-royal to-emerald p-6 text-white flex justify-between items-center">
+                <div>
+                    <h3 class="font-bold text-xl font-poppins">Formulir PPDB Online 2026/2027</h3>
+                    <p class="text-xs text-gray-200">Silakan lengkapi formulir pendaftaran siswa baru secara mandiri.</p>
+                </div>
+                <button onclick="closePPDBWizard()" class="text-white hover:text-gold text-2xl transition"><i class="fas fa-times"></i></button>
+            </div>
+
+            <!-- Steps Progress Bar -->
+            <div class="px-8 pt-6">
+                <div class="flex justify-between items-center text-xs font-bold text-gray-500">
+                    <span id="step-indicator-1" class="text-emerald flex items-center gap-1"><i class="fas fa-check-circle"></i> Siswa</span>
+                    <span id="step-indicator-2" class="flex items-center gap-1"><i>2.</i> Wali Murid</span>
+                    <span id="step-indicator-3" class="flex items-center gap-1"><i>3.</i> Berkas</span>
+                    <span id="step-indicator-4" class="flex items-center gap-1"><i>4.</i> Selesai</span>
+                </div>
+                <div class="w-full bg-gray-200 h-2 rounded-full mt-2 overflow-hidden dark:bg-slate-700">
+                    <div id="wizard-progress-bar" class="bg-emerald h-full w-1/4 transition-all duration-300"></div>
+                </div>
+            </div>
+
+            <form id="ppdb-form" onsubmit="handlePPDBSubmit(event)" class="p-8 space-y-6">
+                <!-- Step 1: Calon Siswa -->
+                <div id="wizard-step-1" class="space-y-4">
+                    <h4 class="font-bold text-gray-800 dark:text-white border-b pb-2 mb-4">Biodata Calon Peserta Didik</h4>
+                    <div>
+                        <label class="block text-sm font-semibold mb-1">Nama Lengkap Calon Siswa <span class="text-red-500">*</span></label>
+                        <input type="text" id="siswa-nama" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald dark:bg-slate-700 dark:border-slate-600 dark:text-white">
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-semibold mb-1">NIK Siswa (16 Digit) <span class="text-red-500">*</span></label>
+                            <input type="number" id="siswa-nik" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald dark:bg-slate-700 dark:border-slate-600 dark:text-white">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-1">Jenis Kelamin <span class="text-red-500">*</span></label>
+                            <select id="siswa-jk" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald dark:bg-slate-700 dark:border-slate-600 dark:text-white">
+                                <option value="Laki-laki">Laki-laki</option>
+                                <option value="Perempuan">Perempuan</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-semibold mb-1">Tempat Lahir <span class="text-red-500">*</span></label>
+                            <input type="text" id="siswa-tempat" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald dark:bg-slate-700 dark:border-slate-600 dark:text-white">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-1">Tanggal Lahir <span class="text-red-500">*</span></label>
+                            <input type="date" id="siswa-tgl" required class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald dark:bg-slate-700 dark:border-slate-600 dark:text-white">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Wali Murid -->
+                <div id="wizard-step-2" class="hidden space-y-4">
+                    <h4 class="font-bold text-gray-800 dark:text-white border-b pb-2 mb-4">Data Orang Tua / Wali</h4>
+                    <div>
+                        <label class="block text-sm font-semibold mb-1">Nama Lengkap Ibu Kandung <span class="text-red-500">*</span></label>
+                        <input type="text" id="wali-ibu" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald dark:bg-slate-700 dark:border-slate-600 dark:text-white">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold mb-1">Nama Lengkap Ayah Kandung <span class="text-red-500">*</span></label>
+                        <input type="text" id="wali-ayah" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald dark:bg-slate-700 dark:border-slate-600 dark:text-white">
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm font-semibold mb-1">Nomor WhatsApp Aktif <span class="text-red-500">*</span></label>
+                            <input type="number" id="wali-telp" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald dark:bg-slate-700 dark:border-slate-600 dark:text-white">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-1">Pekerjaan Utama Wali <span class="text-red-500">*</span></label>
+                            <input type="text" id="wali-pekerjaan" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald dark:bg-slate-700 dark:border-slate-600 dark:text-white">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3: Berkas Simulasi -->
+                <div id="wizard-step-3" class="hidden space-y-4">
+                    <h4 class="font-bold text-gray-800 dark:text-white border-b pb-2 mb-4">Upload Dokumen Pendukung (Simulasi)</h4>
+                    <p class="text-xs text-gray-500">Anda dapat mensimulasikan upload dengan menyeret berkas dummy di bawah ini.</p>
+                    <div class="border-2 border-dashed border-gray-300 dark:border-slate-600 rounded-xl p-6 text-center hover:bg-slate-50 dark:hover:bg-slate-750 transition cursor-pointer">
+                        <i class="fas fa-cloud-upload-alt text-4xl text-gray-400 mb-3"></i>
+                        <h5 class="font-bold">Kartu Keluarga & Akta Kelahiran</h5>
+                        <p class="text-xs text-gray-500 mt-1">Format PDF / JPEG, Maksimal ukuran file simulasi 2MB.</p>
+                        <input type="file" id="ppdb-file-upload" onchange="simulateFileUpload()" class="hidden">
+                        <button type="button" onclick="document.getElementById('ppdb-file-upload').click()" class="mt-4 px-4 py-2 bg-royal text-white rounded-lg font-semibold text-xs">Pilih Berkas Simulasi</button>
+                    </div>
+                    <div id="file-upload-status" class="hidden flex items-center gap-2 bg-emerald/10 text-emerald px-4 py-2.5 rounded-lg text-sm">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Berkas simulasi <strong id="uploaded-filename">Akta_KK_SDN1_Tanjunganom.pdf</strong> siap dilampirkan.</span>
+                    </div>
+                </div>
+
+                <!-- Step 4: Selesai & Kartu -->
+                <div id="wizard-step-4" class="hidden space-y-6 text-center">
+                    <div class="w-16 h-16 bg-emerald/20 text-emerald rounded-full flex items-center justify-center text-3xl mx-auto"><i class="fas fa-check-circle"></i></div>
+                    <h3 class="text-2xl font-bold font-poppins text-gray-800 dark:text-white">Registrasi Berhasil Terkirim!</h3>
+                    <p class="text-gray-500 max-w-md mx-auto text-sm">Nomor Registrasi Anda telah diterbitkan oleh sistem portal SDN 1 Tanjung Anom. Simpan nomor pendaftaran ini untuk mengecek pengumuman.</p>
+                    
+                    <!-- Kartu Digital -->
+                    <div class="bg-gradient-to-br from-royal via-blue-900 to-emerald p-6 rounded-2xl text-white text-left shadow-xl max-w-md mx-auto relative overflow-hidden">
+                        <div class="absolute -right-10 -bottom-10 opacity-10 text-9xl"><i class="fas fa-graduation-cap"></i></div>
+                        <h4 class="font-bold border-b border-white/20 pb-2 mb-3 text-sm tracking-wide">KARTU BUKTI DAFTAR PPDB MANDIRI</h4>
+                        <div class="space-y-2 text-sm">
+                            <p><strong>KODE DAFTAR:</strong> <span class="bg-gold text-royal font-black px-2.5 py-1 rounded text-base ml-2 shadow" id="card-reg-id">REG-2026-XXXXX</span></p>
+                            <p><strong>Nama Calon Siswa:</strong> <span id="card-siswa-nama">Budiyono Santoso</span></p>
+                            <p><strong>Wali Murid:</strong> <span id="card-siswa-wali">Ahmad Santoso</span></p>
+                            <p><strong>Waktu Daftar:</strong> <span id="card-siswa-waktu">21 Juni 2026</span></p>
+                            <p><strong>Status Berkas:</strong> <span class="bg-amber-500 text-white font-bold px-2 py-0.5 rounded text-xs ml-2">Menunggu Verifikasi</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wizard Actions -->
+                <div class="flex justify-between items-center border-t pt-4" id="wizard-actions">
+                    <button type="button" id="prev-btn" onclick="prevWizardStep()" class="px-6 py-2 bg-gray-100 dark:bg-slate-700 text-gray-700 dark:text-gray-300 font-bold rounded-lg hover:bg-gray-200 transition text-sm">Kembali</button>
+                    <button type="button" id="next-btn" onclick="nextWizardStep()" class="px-6 py-2 bg-emerald text-white font-bold rounded-lg hover:bg-green-700 transition text-sm">Lanjut</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Portal Orang Tua / Search Status & Admin Panel Modal -->
+    <div id="portal-modal" class="fixed inset-0 z-[100] hidden overflow-y-auto bg-slate-900/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white dark:bg-slate-800 rounded-2xl w-full max-w-4xl shadow-2xl overflow-hidden transition-all transform scale-95 duration-300 opacity-0" id="portal-box">
+            <!-- Header Tab Navigation -->
+            <div class="bg-gradient-to-r from-royal to-indigo-900 text-white flex justify-between items-center p-6">
+                <div>
+                    <h3 class="font-bold text-xl font-poppins flex items-center gap-2"><i class="fas fa-university"></i> Portal Digital SDN 1 Tanjung Anom</h3>
+                    <p class="text-xs text-gray-200">Akses Informasi Status Kelulusan & Simulasi Penerbitan Berita.</p>
+                </div>
+                <button onclick="closePortalModal()" class="text-white hover:text-gold text-2xl"><i class="fas fa-times"></i></button>
+            </div>
+
+            <!-- Tab Buttons -->
+            <div class="flex border-b dark:border-slate-700 bg-gray-100 dark:bg-slate-900 text-sm font-semibold">
+                <button onclick="switchPortalTab('pencarian')" id="tab-pencarian" class="flex-1 py-3 text-center border-b-2 border-royal text-royal dark:text-blue-400">Pencarian Pendaftar</button>
+                <button onclick="switchPortalTab('admin')" id="tab-admin" class="flex-1 py-3 text-center text-gray-500 hover:bg-gray-50 dark:hover:bg-slate-850">Simulasi Developer & Admin Panel</button>
+            </div>
+
+            <!-- Portal Body -->
+            <div class="p-8">
+                <!-- Tab: Pencarian Status PPDB -->
+                <div id="portal-tab-pencarian-box" class="space-y-6">
+                    <div class="max-w-md mx-auto text-center space-y-2">
+                        <h4 class="font-bold text-lg">Cek Status Hasil Seleksi PPDB</h4>
+                        <p class="text-xs text-gray-500">Masukkan kode pendaftaran (contoh: <strong class="text-royal">REG-2026-001</strong> atau kartu baru Anda) di kolom pencarian.</p>
+                    </div>
+
+                    <div class="max-w-md mx-auto flex gap-2">
+                        <input type="text" id="ppdb-search-input" placeholder="Contoh: REG-2026-001" class="flex-1 px-4 py-2 border rounded-xl focus:outline-none focus:ring-2 focus:ring-royal dark:bg-slate-700 dark:border-slate-600 dark:text-white uppercase">
+                        <button onclick="searchPPDBStatus()" class="px-6 py-2 bg-royal hover:bg-indigo-700 text-white font-bold rounded-xl text-sm transition">Cari Berkas</button>
+                    </div>
+
+                    <!-- Search Result View -->
+                    <div id="search-result" class="hidden max-w-xl mx-auto border dark:border-slate-700 rounded-2xl p-6 bg-gray-50 dark:bg-slate-700/50 space-y-4">
+                        <!-- Loaded via script -->
+                    </div>
+                </div>
+
+                <!-- Tab: Admin Panel Demo Simulator -->
+                <div id="portal-tab-admin-box" class="hidden space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <!-- Left Panel: Counter Changer & Accreditation -->
+                        <div class="border dark:border-slate-700 p-4 rounded-xl space-y-4 bg-gray-50 dark:bg-slate-900/50">
+                            <h4 class="font-bold text-royal dark:text-blue-400 border-b pb-2 text-sm uppercase"><i class="fas fa-sliders-h mr-1"></i> Pengaturan Konten</h4>
+                            <div>
+                                <label class="block text-xs font-semibold mb-1">Jumlah Peserta Didik</label>
+                                <input type="number" id="admin-input-students" value="187" onchange="updateAdminStats()" class="w-full px-3 py-1 text-sm border rounded dark:bg-slate-700 dark:border-slate-600 dark:text-white">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold mb-1">Jumlah Guru / Staf</label>
+                                <input type="number" id="admin-input-teachers" value="14" onchange="updateAdminStats()" class="w-full px-3 py-1 text-sm border rounded dark:bg-slate-700 dark:border-slate-600 dark:text-white">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold mb-1">Rombongan Belajar</label>
+                                <input type="number" id="admin-input-classes" value="8" onchange="updateAdminStats()" class="w-full px-3 py-1 text-sm border rounded dark:bg-slate-700 dark:border-slate-600 dark:text-white">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold mb-1">Predikat Akreditasi</label>
+                                <select id="admin-input-accreditation" onchange="updateAdminStats()" class="w-full px-3 py-1 text-sm border rounded dark:bg-slate-700 dark:border-slate-600 dark:text-white">
+                                    <option value="A">A (Sangat Baik)</option>
+                                    <option value="B" selected>B (Baik)</option>
+                                    <option value="C">C (Cukup)</option>
+                                </select>
+                            </div>
+                            <button onclick="saveAdminStats()" class="w-full py-2 bg-emerald hover:bg-green-700 text-white font-bold rounded-lg text-xs transition">Terapkan Perubahan Stats</button>
+                        </div>
+
+                        <!-- Center Panel: Live Admin PPDB Handler -->
+                        <div class="border dark:border-slate-700 p-4 rounded-xl space-y-4 bg-gray-50 dark:bg-slate-900/50 md:col-span-2">
+                            <h4 class="font-bold text-royal dark:text-blue-400 border-b pb-2 text-sm uppercase"><i class="fas fa-user-edit mr-1"></i> Pengelola Verifikasi PPDB</h4>
+                            <div class="overflow-x-auto max-h-[220px]">
+                                <table class="w-full text-left text-xs border-collapse">
+                                    <thead>
+                                        <tr class="bg-gray-200 dark:bg-slate-800 font-bold">
+                                            <th class="p-2 border dark:border-slate-700">Kode</th>
+                                            <th class="p-2 border dark:border-slate-700">Nama Siswa</th>
+                                            <th class="p-2 border dark:border-slate-700">Wali</th>
+                                            <th class="p-2 border dark:border-slate-700">Status</th>
+                                            <th class="p-2 border dark:border-slate-700 text-center">Tindakan</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="admin-ppdb-table-body">
+                                        <!-- Rendered via state script -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Write News Section -->
+                    <div class="border dark:border-slate-700 p-6 rounded-2xl space-y-4 bg-gray-50 dark:bg-slate-900/50">
+                        <h4 class="font-bold text-royal dark:text-blue-400 border-b pb-2 uppercase text-sm"><i class="fas fa-newspaper mr-1"></i> Publikasikan Berita Sekolah Baru (Simulasi Live)</h4>
+                        <form onsubmit="handlePublishNews(event)" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="space-y-3">
+                                <div>
+                                    <label class="block text-xs font-semibold mb-1">Judul Berita Baru</label>
+                                    <input type="text" id="news-title" required placeholder="Contoh: SDN 1 Mengadakan Outbound Cerdas" class="w-full px-3 py-2 text-sm border rounded dark:bg-slate-700 dark:border-slate-600 dark:text-white">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold mb-1">Tanggal Rilis</label>
+                                    <input type="text" id="news-date" value="21 Juni 2026" class="w-full px-3 py-2 text-sm border rounded dark:bg-slate-700 dark:border-slate-600 dark:text-white">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold mb-1">Gambar Berita (Pilih Preset Simulasi)</label>
+                                    <select id="news-image" class="w-full px-3 py-2 text-sm border rounded dark:bg-slate-700 dark:border-slate-600 dark:text-white">
+                                        <option value="Kepala Sekolah.jpeg">Preset - Kepala Sekolah & Staff</option>
+                                        <option value="foto bersama guru yang juara.jpeg">Preset - Upacara Bendera</option>
+                                        <option value="SIswa belajar Coding.jpeg">Preset - Lab Komputer</option>
+                                        <option value="Kegiatan Kemah.jpeg">Preset - Karya P5 Lingkungan</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="space-y-3 flex flex-col">
+                                <div class="flex-1">
+                                    <label class="block text-xs font-semibold mb-1">Ringkasan / Isi Berita Singkat</label>
+                                    <textarea id="news-body" required rows="5" placeholder="Tulis rincian berita di sini..." class="w-full h-full px-3 py-2 text-sm border rounded dark:bg-slate-700 dark:border-slate-600 dark:text-white"></textarea>
+                                </div>
+                                <button type="submit" class="w-full py-3 bg-royal hover:bg-blue-800 text-white font-bold rounded-lg text-sm transition mt-2"><i class="fas fa-paper-plane mr-1"></i> Terbitkan Berita Langsung</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fullscreen Image Lightbox Modal -->
+    <div id="lightbox-modal" onclick="closeLightbox()" class="fixed inset-0 z-[101] hidden bg-slate-950/95 flex flex-col items-center justify-center p-4">
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white text-3xl hover:text-gold transition"><i class="fas fa-times"></i></button>
+        <img id="lightbox-img" src="" alt="Zoomed view" class="max-w-full max-h-[80vh] rounded-lg shadow-2xl object-contain">
+        <p id="lightbox-caption" class="text-white text-center mt-6 font-poppins font-semibold text-lg max-w-xl"></p>
+        <span class="text-xs text-gray-400 mt-2">Ketuk di mana saja untuk menutup kembali</span>
+    </div>
+
+    <!-- Interactive AI Chatbot Support - Bu Azza -->
+    <div id="chatbot-container" class="fixed bottom-6 right-6 z-[90] flex flex-col items-end">
+        <!-- Floating WA Trigger or Chat Trigger -->
+        <button onclick="toggleChatbot()" class="w-16 h-16 bg-emerald text-white rounded-full flex items-center justify-center text-3xl shadow-2xl btn-wa hover:bg-[#1ebe57] transition-colors relative">
+            <i class="fas fa-comment-dots"></i>
+            <span class="absolute -top-1 -right-1 bg-red-500 text-[10px] text-white px-2 py-0.5 rounded-full font-bold">LIVE</span>
+        </button>
+
+        <!-- Chat window box -->
+        <div id="chat-window" class="hidden flex-col bg-white dark:bg-slate-800 rounded-2xl w-[320px] sm:w-[380px] h-[480px] shadow-2xl overflow-hidden border dark:border-slate-700 mt-4 transition-all transform scale-95 origin-bottom-right">
+            <!-- Chat Header -->
+            <div class="bg-gradient-to-r from-emerald to-green-700 p-4 text-white flex items-center gap-3">
+                <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-emerald text-xl font-bold shadow">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-sm font-poppins">Bu Azza - Asisten SDN 1</h4>
+                    <p class="text-[10px] text-emerald-100 flex items-center gap-1"><span class="w-2 h-2 bg-green-400 rounded-full animate-ping"></span> Aktif Menjawab Pertanyaan</p>
+                </div>
+                <button onclick="toggleChatbot()" class="ml-auto text-white hover:text-gold text-lg"><i class="fas fa-times"></i></button>
+            </div>
+
+            <!-- Messages Stream -->
+            <div id="chat-messages" class="flex-1 p-4 overflow-y-auto space-y-3 bg-gray-50 dark:bg-slate-900 text-xs text-gray-700 dark:text-gray-200">
+                <div class="bg-white dark:bg-slate-800 p-3 rounded-r-xl rounded-bl-xl shadow-sm border max-w-[85%]">
+                    Halo! Saya **Bu Azza**, asisten pendaftaran virtual SDN 1 Tanjung Anom. Ada yang bisa saya bantu hari ini? 😊
+                </div>
+                <!-- Dynamic Quick Replies Buttons -->
+                <div class="space-y-2" id="quick-replies-box">
+                    <button onclick="askBot('Bagaimana alur pendaftaran PPDB?', 'ppdb')" class="block w-full text-left p-2.5 bg-emerald/10 text-emerald hover:bg-emerald/20 font-semibold rounded-lg transition-colors border border-emerald/20 text-[11px]">📝 Bagaimana alur pendaftaran PPDB?</button>
+                    <button onclick="askBot('Apa saja syarat masuk calon siswa?', 'syarat')" class="block w-full text-left p-2.5 bg-royal/10 text-royal hover:bg-royal/20 font-semibold rounded-lg transition-colors border border-royal/20 text-[11px] dark:text-blue-300">📁 Apa saja syarat dokumen masuk?</button>
+                    <button onclick="askBot('Berapa biaya / SPP sekolah?', 'biaya')" class="block w-full text-left p-2.5 bg-amber-500/10 text-amber-600 hover:bg-amber-500/20 font-semibold rounded-lg transition-colors border border-amber-500/20 text-[11px] dark:text-amber-400">💰 Berapa biaya / SPP sekolah?</button>
+                    <button onclick="askBot('Di mana letak lokasi sekolah?', 'lokasi')" class="block w-full text-left p-2.5 bg-gray-100 hover:bg-gray-200 text-gray-800 dark:bg-slate-700 dark:text-gray-200 font-semibold rounded-lg transition-colors text-[11px]">📍 Di mana letak lokasi sekolah?</button>
+                </div>
+            </div>
+
+            <!-- Chat Input form -->
+            <form onsubmit="handleChatSubmit(event)" class="p-3 bg-white dark:bg-slate-800 border-t dark:border-slate-700 flex gap-2">
+                <input type="text" id="chat-input" placeholder="Tulis pertanyaan Anda di sini..." class="flex-1 px-3 py-2 border rounded-xl text-xs focus:outline-none focus:ring-1 focus:ring-emerald dark:bg-slate-700 dark:border-slate-600 dark:text-white">
+                <button type="submit" class="bg-emerald text-white p-2 px-4 rounded-xl hover:bg-green-700 transition"><i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Database State Simulator in Memory
+        const state = {
+            registrations: [
+                { id: "REG-2026-001", name: "Rian Hendrawan", parentName: "Hendra Wijaya", phone: "082211223344", status: "Disetujui", date: "21 Mei 2026", docs: ["Akta_Lahir.jpg", "Kartu_Keluarga.pdf"] },
+                { id: "REG-2026-002", name: "Aisyah Putri", parentName: "Ahmad Yani", phone: "085288776655", status: "Menunggu Verifikasi", date: "10 Juni 2026", docs: ["Berkas_Daftar_Mandiri.zip"] },
+                { id: "REG-2026-003", name: "Budi Pratama", parentName: "Agus Pratama", phone: "081299008877", status: "Ditolak / Dokumen Kurang", date: "18 Juni 2026", docs: ["Foto_Siswa.png"] }
+            ],
+            news: [
+
+                {
+                    id: 1,
+                    title: "Siswa SDN 1 Tanjung Anom Borong Medali di O2SN Tingkat Kecamatan",
+                    date: "20 Juni 2026",
+                    category: "OLAHRAGA",
+                    summary:
+                    "Prestasi membanggakan kembali diraih oleh peserta didik dalam ajang Olimpiade Olahraga Siswa Nasional tingkat Kecamatan Ambarawa.",
+                    image: "Borong Piala.jpeg"
+                    },
+
+                    {
+                    id: 2,
+                    title: "Peringatan Hari Besar Nasional Berlangsung Khidmat",
+                    date: "18 Juni 2026",
+                    category: "UPACARA",
+                    summary:
+                    "Seluruh siswa dan guru mengikuti upacara bendera dengan penuh semangat sebagai bentuk penanaman karakter kebangsaan.",
+                    image: "Upacara PGRI.jpeg"
+                    },
+
+                    {
+                    id: 3,
+                    title: "Peluncuran Program Ekstrakurikuler Coding Dasar",
+                    date: "15 Juni 2026",
+                    category: "TEKNOLOGI",
+                    summary:
+                    "Program coding dasar diperkenalkan untuk meningkatkan keterampilan digital dan computational thinking peserta didik.",
+                    image: "SIswa belajar Coding.jpeg"
+                    }
+                    ],
+            stats: {
+                students: 187,
+                teachers: 14,
+                classes: 8,
+                accreditation: "B"
+            }
+        };
+
+        // Initialize Application
+        window.onload = function () {
+            // Load dynamically posted news list
+            renderNewsFeed();
+            // Start counter animations
+            startCounters();
+            // Initialize AOS animations
+            AOS.init({
+                duration: 800,
+                once: true,
+                offset: 100,
+            });
+            // Update the simulated Admin stats table on start
+            renderAdminPPDBTable();
+        }
+
+        // Toggle Dark Mode
+        function toggleDarkMode() {
+            const html = document.documentElement;
+            const icon = document.getElementById('theme-icon');
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                icon.className = "fas fa-moon";
+                showToast("Beralih ke Mode Terang", "info");
+            } else {
+                html.classList.add('dark');
+                icon.className = "fas fa-sun";
+                showToast("Beralih ke Mode Gelap", "info");
+            }
+        }
+
+        // Show Custom Toast Notification (instead of alert)
+        function showToast(message, type = "success") {
+            const toast = document.getElementById('toast');
+            const msgSpan = document.getElementById('toast-msg');
+            const iconSpan = document.getElementById('toast-icon');
+            
+            msgSpan.innerText = message;
+            
+            if (type === "success") {
+                toast.className = "fixed top-24 right-4 z-[999] transform transition-transform duration-300 bg-emerald text-white px-6 py-4 rounded-xl shadow-2xl flex items-center gap-3";
+                iconSpan.innerHTML = '<i class="fas fa-check-circle"></i>';
+            } else if (type === "info") {
+                toast.className = "fixed top-24 right-4 z-[999] transform transition-transform duration-300 bg-royal text-white px-6 py-4 rounded-xl shadow-2xl flex items-center gap-3";
+                iconSpan.innerHTML = '<i class="fas fa-info-circle"></i>';
+            } else if (type === "error") {
+                toast.className = "fixed top-24 right-4 z-[999] transform transition-transform duration-300 bg-red-600 text-white px-6 py-4 rounded-xl shadow-2xl flex items-center gap-3";
+                iconSpan.innerHTML = '<i class="fas fa-exclamation-triangle"></i>';
+            }
+
+            toast.classList.remove('translate-x-full');
+            
+            setTimeout(() => {
+                toast.classList.add('translate-x-full');
+            }, 3000);
+        }
+
+        // Rendering news stream dynamically
+        function renderNewsFeed() {
+            const newsGrid = document.getElementById('news-grid-container');
+            newsGrid.innerHTML = '';
+            
+            state.news.forEach((post, index) => {
+                const articleHTML = `
+                    <article class="bg-white dark:bg-slate-800 rounded-2xl overflow-hidden shadow-lg hover-lift" data-aos="fade-up" data-aos-delay="${(index + 1) * 100}">
+                        <div class="relative overflow-hidden h-48">
+                            <img src="${post.image}" alt="${post.title}" class="w-full h-full object-cover group-hover:scale-105 transition">
+                            <span class="absolute top-4 left-4 bg-emerald text-white text-xs px-2.5 py-1 rounded-full font-bold uppercase">${post.category || 'Berita'}</span>
+                        </div>
+                        <div class="p-6">
+                            <div class="text-xs text-gray-500 dark:text-gray-400 mb-2 flex items-center gap-2">
+                                <i class="far fa-calendar-alt text-emerald"></i> ${post.date}
+                            </div>
+                            <h3 class="text-xl font-bold font-poppins text-gray-800 dark:text-white mb-2 line-clamp-2">${post.title}</h3>
+                            <p class="text-gray-600 dark:text-gray-300 text-sm mb-4 line-clamp-3">${post.summary}</p>
+                            <button onclick="showToast('Isi lengkap berita sedang dimuat...', 'info')" class="text-royal dark:text-blue-400 font-bold text-sm hover:text-emerald transition flex items-center gap-1">Baca Selengkapnya <i class="fas fa-chevron-right text-xs"></i></button>
+                        </div>
+                    </article>
+                `;
+                newsGrid.insertAdjacentHTML('beforeend', articleHTML);
+            });
+        }
+
+        // Counter Animation Engine
+        function startCounters() {
+            const counters = document.querySelectorAll('.counter');
+            const speed = 200;
+
+            const counterObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counter = entry.target;
+                        const updateCount = () => {
+                            const target = +counter.getAttribute('data-target');
+                            const count = +counter.innerText;
+                            const inc = target / speed;
+
+                            if (count < target) {
+                                counter.innerText = Math.ceil(count + inc);
+                                setTimeout(updateCount, 10);
+                            } else {
+                                counter.innerText = target;
+                            }
+                        };
+                        updateCount();
+                        observer.unobserve(counter);
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            counters.forEach(counter => {
+                counterObserver.observe(counter);
+            });
+        }
+
+        // Prestasi/Gallery Filtering Action
+        function filterGallery(category) {
+            const cards = document.querySelectorAll('.target-card');
+            const buttons = document.querySelectorAll('.tab-btn');
+
+            buttons.forEach(btn => {
+                btn.className = "tab-btn px-5 py-2.5 bg-white text-gray-700 dark:bg-slate-800 dark:text-gray-300 rounded-full shadow-sm text-sm font-semibold hover:bg-gray-100 transition";
+            });
+
+            const activeBtn = document.getElementById(`btn-${category}`);
+            if (activeBtn) activeBtn.className = "tab-btn px-5 py-2.5 bg-royal text-white rounded-full shadow-md text-sm font-semibold transition";
+
+            cards.forEach(card => {
+                const cardCat = card.getAttribute('data-category');
+                if (category === 'semua' || cardCat === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Lightbox Functions
+        function openLightbox(src, caption) {
+            const modal = document.getElementById('lightbox-modal');
+            const img = document.getElementById('lightbox-img');
+            const cap = document.getElementById('lightbox-caption');
+
+            img.src = src;
+            cap.innerText = caption;
+
+            modal.classList.remove('hidden');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox-modal').classList.add('hidden');
+        }
+
+        // Mobile Menu Toggle
+        const btnMenu = document.getElementById('mobile-menu-btn');
+        const menuBlock = document.getElementById('mobile-menu');
+        btnMenu.addEventListener('click', () => {
+            menuBlock.classList.toggle('hidden');
+        });
+
+        // Sticky Navbar effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('shadow-md');
+            } else {
+                navbar.classList.remove('shadow-md');
+            }
+        });
+
+        // ================= WIZARD FORM PPDB ONLINE =================
+        let currentStep = 1;
+        
+        function openPPDBWizard() {
+            const modal = document.getElementById('ppdb-wizard-modal');
+            const box = document.getElementById('wizard-box');
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                box.classList.remove('scale-95', 'opacity-0');
+            }, 50);
+            currentStep = 1;
+            updateWizardView();
+        }
+
+        function closePPDBWizard() {
+            const modal = document.getElementById('ppdb-wizard-modal');
+            const box = document.getElementById('wizard-box');
+            box.classList.add('scale-95', 'opacity-0');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300);
+        }
+
+        function updateWizardView() {
+            // Update steps layout
+            for(let i=1; i<=4; i++) {
+                const stepDiv = document.getElementById(`wizard-step-${i}`);
+                const indicator = document.getElementById(`step-indicator-${i}`);
+                
+                if (i === currentStep) {
+                    stepDiv.classList.remove('hidden');
+                    indicator.className = "text-emerald font-bold flex items-center gap-1";
+                } else {
+                    stepDiv.classList.add('hidden');
+                    indicator.className = "text-gray-400 font-bold flex items-center gap-1";
+                }
+            }
+
+            // Update Progress Bar
+            const progressBar = document.getElementById('wizard-progress-bar');
+            progressBar.style.width = `${(currentStep / 4) * 100}%`;
+
+            // Setup buttons
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const actions = document.getElementById('wizard-actions');
+
+            if (currentStep === 4) {
+                actions.classList.add('hidden');
+            } else {
+                actions.classList.remove('hidden');
+            }
+
+            if (currentStep === 1) {
+                prevBtn.classList.add('opacity-50', 'pointer-events-none');
+            } else {
+                prevBtn.classList.remove('opacity-50', 'pointer-events-none');
+            }
+
+            if (currentStep === 3) {
+                nextBtn.innerText = "Kirim Pendaftaran";
+            } else {
+                nextBtn.innerText = "Lanjut";
+            }
+        }
+
+        function nextWizardStep() {
+            // Validate inputs for current step
+            if (currentStep === 1) {
+                const nama = document.getElementById('siswa-nama').value;
+                const nik = document.getElementById('siswa-nik').value;
+                const tempat = document.getElementById('siswa-tempat').value;
+                const tgl = document.getElementById('siswa-tgl').value;
+
+                if (!nama || !nik || !tempat || !tgl) {
+                    showToast("Harap lengkapi semua biodata siswa!", "error");
+                    return;
+                }
+                if (nik.length < 10) {
+                    showToast("Harap masukkan NIK yang valid!", "error");
+                    return;
+                }
+            } else if (currentStep === 2) {
+                const ibu = document.getElementById('wali-ibu').value;
+                const ayah = document.getElementById('wali-ayah').value;
+                const telp = document.getElementById('wali-telp').value;
+
+                if (!ibu || !ayah || !telp) {
+                    showToast("Harap lengkapi data orang tua / wali!", "error");
+                    return;
+                }
+            } else if (currentStep === 3) {
+                // Final submission trigger
+                processRegistrationSubmit();
+                return;
+            }
+
+            currentStep++;
+            updateWizardView();
+        }
+
+        function prevWizardStep() {
+            if (currentStep > 1) {
+                currentStep--;
+                updateWizardView();
+            }
+        }
+
+        function simulateFileUpload() {
+            const status = document.getElementById('file-upload-status');
+            const name = document.getElementById('uploaded-filename');
+            const fileInput = document.getElementById('ppdb-file-upload');
+            
+            if (fileInput.files.length > 0) {
+                name.innerText = fileInput.files[0].name;
+            } else {
+                name.innerText = "Akta_KK_SDN1_Tanjunganom.pdf";
+            }
+            status.classList.remove('hidden');
+            showToast("Simulasi berkas berhasil dilampirkan!", "success");
+        }
+
+        function processRegistrationSubmit() {
+            const nama = document.getElementById('siswa-nama').value;
+            const wali = document.getElementById('wali-ayah').value || document.getElementById('wali-ibu').value;
+            const phone = document.getElementById('wali-telp').value;
+
+            // Generate automatic unique ID
+            const randID = Math.floor(100 + Math.random() * 900);
+            const regCode = `REG-2026-${randID}`;
+
+            // Save inside local simulation state
+            const newRecord = {
+                id: regCode,
+                name: nama,
+                parentName: wali,
+                phone: phone,
+                status: "Menunggu Verifikasi",
+                date: "21 Juni 2026",
+                docs: ["Berkas_Daftar_Mandiri.zip"]
+            };
+
+            state.registrations.push(newRecord);
+            
+            // Render onto Card Step 4
+            document.getElementById('card-reg-id').innerText = regCode;
+            document.getElementById('card-siswa-nama').innerText = nama;
+            document.getElementById('card-siswa-wali').innerText = wali;
+            document.getElementById('card-siswa-waktu').innerText = "21 Juni 2026";
+
+            // Update simulated Admin table immediately
+            renderAdminPPDBTable();
+
+            // Transition to Final Step 4
+            currentStep = 4;
+            updateWizardView();
+            showToast("Pendaftaran PPDB Berhasil Terkirim!", "success");
+        }
+
+        // ================= PORTAL DIALOUGES & ADMIN SIMULATION =================
+        function openPortalModal() {
+            const modal = document.getElementById('portal-modal');
+            const box = document.getElementById('portal-box');
+            modal.classList.remove('hidden');
+            setTimeout(() => {
+                box.classList.remove('scale-95', 'opacity-0');
+            }, 50);
+            switchPortalTab('pencarian');
+        }
+
+        function closePortalModal() {
+            const modal = document.getElementById('portal-modal');
+            const box = document.getElementById('portal-box');
+            box.classList.add('scale-95', 'opacity-0');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300);
+        }
+
+        function switchPortalTab(tab) {
+            const btnPencarian = document.getElementById('tab-pencarian');
+            const btnAdmin = document.getElementById('tab-admin');
+            const boxPencarian = document.getElementById('portal-tab-pencarian-box');
+            const boxAdmin = document.getElementById('portal-tab-admin-box');
+
+            if (tab === 'pencarian') {
+                btnPencarian.className = "flex-1 py-3 text-center border-b-2 border-royal text-royal dark:text-blue-400 font-bold bg-white dark:bg-slate-800";
+                btnAdmin.className = "flex-1 py-3 text-center text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-slate-850";
+                boxPencarian.classList.remove('hidden');
+                boxAdmin.classList.add('hidden');
+            } else {
+                btnAdmin.className = "flex-1 py-3 text-center border-b-2 border-royal text-royal dark:text-blue-400 font-bold bg-white dark:bg-slate-800";
+                btnPencarian.className = "flex-1 py-3 text-center text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-slate-850";
+                boxAdmin.classList.remove('hidden');
+                boxPencarian.classList.add('hidden');
+            }
+        }
+
+        // Search PPDB database from input query code
+        function searchPPDBStatus() {
+            const input = document.getElementById('ppdb-search-input').value.trim().toUpperCase();
+            const resultBox = document.getElementById('search-result');
+            
+            if (!input) {
+                showToast("Harap masukkan Kode Pendaftaran!", "error");
+                return;
+            }
+
+            const record = state.registrations.find(r => r.id === input);
+
+            if (!record) {
+                resultBox.classList.remove('hidden');
+                resultBox.innerHTML = `
+                    <div class="text-center text-red-500 py-6">
+                        <i class="fas fa-search-minus text-4xl mb-3"></i>
+                        <h4 class="font-bold font-poppins">Data Tidak Ditemukan</h4>
+                        <p class="text-xs text-gray-500 mt-1">Pastikan ID yang Anda ketik benar (Contoh: REG-2026-001)</p>
+                    </div>
+                `;
+                return;
+            }
+
+            let statusBadge = '';
+            let timelineProgress = '';
+
+            if (record.status === "Disetujui") {
+                statusBadge = '<span class="bg-emerald/10 text-emerald font-bold px-3 py-1 rounded-full text-xs">DISETUJUI / LOLOS</span>';
+                timelineProgress = `
+                    <div class="flex items-center justify-between text-xs font-bold text-emerald mt-6">
+                        <div class="text-center"><i class="fas fa-check-circle text-lg block mx-auto"></i> Berkas Masuk</div>
+                        <div class="h-0.5 bg-emerald flex-1"></div>
+                        <div class="text-center"><i class="fas fa-check-circle text-lg block mx-auto"></i> Terverifikasi</div>
+                        <div class="h-0.5 bg-emerald flex-1"></div>
+                        <div class="text-center"><i class="fas fa-check-circle text-lg block mx-auto"></i> Lolos Seleksi</div>
+                    </div>
+                `;
+            } else if (record.status.startsWith("Ditolak")) {
+                statusBadge = '<span class="bg-red-100 text-red-600 font-bold px-3 py-1 rounded-full text-xs">BERKAS DITOLAK / KURANG</span>';
+                timelineProgress = `
+                    <p class="text-xs text-red-500 bg-red-50 p-2.5 rounded-lg mt-4 border border-red-100">
+                        <strong>Catatan Panitia:</strong> Berkas dokumen Akta Kelahiran atau Kartu Keluarga buram, silakan hubungi WhatsApp panitia untuk melakukan koreksi berkas.
+                    </p>
+                `;
+            } else {
+                statusBadge = '<span class="bg-amber-500/10 text-amber-600 font-bold px-3 py-1 rounded-full text-xs">PROSES VERIFIKASI</span>';
+                timelineProgress = `
+                    <div class="flex items-center justify-between text-xs font-bold text-gray-400 mt-6">
+                        <div class="text-center text-emerald"><i class="fas fa-check-circle text-lg block mx-auto"></i> Berkas Masuk</div>
+                        <div class="h-0.5 bg-emerald flex-1"></div>
+                        <div class="text-center text-amber-500"><i class="fas fa-spinner animate-spin text-lg block mx-auto"></i> Verifikasi</div>
+                        <div class="h-0.5 bg-gray-200 flex-1"></div>
+                        <div class="text-center"><i class="fas fa-circle text-lg block mx-auto"></i> Lolos Seleksi</div>
+                    </div>
+                `;
+            }
+
+            resultBox.classList.remove('hidden');
+            resultBox.innerHTML = `
+                <div class="space-y-4">
+                    <div class="flex justify-between items-start border-b pb-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800 dark:text-white font-poppins text-lg">${record.name}</h4>
+                            <p class="text-xs text-gray-400">Terdaftar pada: ${record.date}</p>
+                        </div>
+                        ${statusBadge}
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 text-xs">
+                        <p><strong>ID Registrasi:</strong> <span class="text-royal font-bold">${record.id}</span></p>
+                        <p><strong>Nama Wali:</strong> ${record.parentName}</p>
+                        <p><strong>WhatsApp Wali:</strong> ${record.phone}</p>
+                        <p><strong>Lampiran Berkas:</strong> ${record.docs.join(', ')}</p>
+                    </div>
+                    ${timelineProgress}
+                </div>
+            `;
+        }
+
+        // Live Admin Table Handler 
+        function renderAdminPPDBTable() {
+            const tableBody = document.getElementById('admin-ppdb-table-body');
+            tableBody.innerHTML = '';
+
+            state.registrations.forEach(record => {
+                let badgeClass = 'text-amber-500 bg-amber-50';
+                if (record.status === 'Disetujui') badgeClass = 'text-emerald bg-emerald/10';
+                if (record.status.startsWith('Ditolak')) badgeClass = 'text-red-500 bg-red-50';
+
+                const tr = `
+                    <tr class="hover:bg-gray-50 dark:hover:bg-slate-800 text-gray-700 dark:text-gray-300">
+                        <td class="p-2 border dark:border-slate-700 font-bold">${record.id}</td>
+                        <td class="p-2 border dark:border-slate-700">${record.name}</td>
+                        <td class="p-2 border dark:border-slate-700">${record.parentName}</td>
+                        <td class="p-2 border dark:border-slate-700">
+                            <span class="px-2 py-0.5 rounded text-[10px] font-bold ${badgeClass}">${record.status}</span>
+                        </td>
+                        <td class="p-2 border dark:border-slate-700 text-center space-x-1 flex justify-center">
+                            <button onclick="approveRegistration('${record.id}')" class="bg-emerald text-white p-1 rounded hover:bg-green-700" title="Setujui"><i class="fas fa-check text-[10px]"></i></button>
+                            <button onclick="rejectRegistration('${record.id}')" class="bg-red-500 text-white p-1 rounded hover:bg-red-700" title="Tolak / Kurang berkas"><i class="fas fa-times text-[10px]"></i></button>
+                        </td>
+                    </tr>
+                `;
+                tableBody.insertAdjacentHTML('beforeend', tr);
+            });
+        }
+
+        function approveRegistration(id) {
+            const record = state.registrations.find(r => r.id === id);
+            if (record) {
+                record.status = "Disetujui";
+                renderAdminPPDBTable();
+                showToast(`Registrasi ${id} Berhasil Disetujui!`, "success");
+            }
+        }
+
+        function rejectRegistration(id) {
+            const record = state.registrations.find(r => r.id === id);
+            if (record) {
+                record.status = "Ditolak / Dokumen Kurang";
+                renderAdminPPDBTable();
+                showToast(`Registrasi ${id} Ditangguhkan`, "error");
+            }
+        }
+
+        // Live stats modifier from settings
+        function updateAdminStats() {
+            const students = document.getElementById('admin-input-students').value;
+            const teachers = document.getElementById('admin-input-teachers').value;
+            const classes = document.getElementById('admin-input-classes').value;
+            const accreditation = document.getElementById('admin-input-accreditation').value;
+
+            state.stats = {
+                students,
+                teachers,
+                classes,
+                accreditation
+            };
+        }
+
+        function saveAdminStats() {
+            // Apply live change immediately to home view
+            document.getElementById('stat-students').setAttribute('data-target', state.stats.students);
+            document.getElementById('stat-students').innerText = state.stats.students;
+            
+            document.getElementById('stat-teachers').setAttribute('data-target', state.stats.teachers);
+            document.getElementById('stat-teachers').innerText = state.stats.teachers;
+
+            document.getElementById('stat-classes').setAttribute('data-target', state.stats.classes);
+            document.getElementById('stat-classes').innerText = state.stats.classes;
+
+            document.getElementById('stat-accreditation').innerText = state.stats.accreditation;
+            document.getElementById('badge-accreditation').innerText = state.stats.accreditation;
+
+            showToast("Statistik sekolah diperbarui secara live!", "success");
+        }
+
+        // Publish live school article simulator
+        function handlePublishNews(event) {
+            event.preventDefault();
+            const title = document.getElementById('news-title').value;
+            const date = document.getElementById('news-date').value;
+            const image = document.getElementById('news-image').value;
+            const body = document.getElementById('news-body').value;
+
+            const newArticle = {
+                id: state.news.length + 1,
+                title: title,
+                date: date,
+                category: "Info Baru",
+                summary: body,
+                image: image
+            };
+
+            state.news.unshift(newArticle);
+            
+            // Re-render and flush KBM news feeds
+            renderNewsFeed();
+            
+            // Clear news fields
+            document.getElementById('news-title').value = '';
+            document.getElementById('news-body').value = '';
+
+            showToast("Berita baru berhasil dipublikasikan di halaman utama!", "success");
+        }
+
+        // ================= INTERACTIVE VIRTUAL ASISTEN AI (Bu Indah) =================
+        function toggleChatbot() {
+            const chatWindow = document.getElementById('chat-window');
+            chatWindow.classList.toggle('hidden');
+        }
+
+        function askBot(query, key) {
+            appendUserMessage(query);
+            
+            let response = '';
+            if (key === 'ppdb') {
+                response = "Formulir pendaftaran PPDB gelombang mandiri dibuka mulai tanggal **1 Mei hingga 30 Juni 2026**. Anda bisa mendaftar online melalui tombol **Isi Formulir PPDB Online** di atas.";
+            } else if (key === 'syarat') {
+                response = "Syarat utama masuk pendaftar SDN 1 Tanjung Anom:<br>1. Usia minimal 6 tahun pada bulan Juli 2026.<br>2. Fotokopi Akta Kelahiran.<br>3. Fotokopi Kartu Keluarga.<br>4. Pas Foto berwarna latar merah/biru.";
+            } else if (key === 'biaya') {
+                response = "Sebagai sekolah dasar negeri yang didukung penuh oleh dana BOS nasional, **SDN 1 Tanjung Anom tidak memungut biaya SPP bulanan (Gratis)**. Iuran sukarela hanya dilakukan jika disepakati paguyuban komite kelas.";
+            } else if (key === 'lokasi') {
+                response = "Sekolah kami beralamat di Jl. Raya Tanjung Anom, Kecamatan Ambarawa, Kabupaten Pringsewu. Rute jalan aspal mulus dan mudah diakses kendaraan roda 2 maupun roda 4.";
+            }
+
+            setTimeout(() => {
+                appendBotMessage(response);
+            }, 600);
+        }
+
+        function handleChatSubmit(event) {
+            event.preventDefault();
+            const input = document.getElementById('chat-input');
+            const query = input.value.trim();
+            
+            if (!query) return;
+
+            appendUserMessage(query);
+            input.value = '';
+
+            // Simple keyword matching answering logic
+            let response = "Maaf, saya tidak mengerti maksud pertanyaan tersebut. Anda bisa menghubungi langsung nomor telepon admin di **0822-4555-3322** atau klik tombol cepat di atas.";
+            
+            const lowQuery = query.toLowerCase();
+            if (lowQuery.includes('ppdb') || lowQuery.includes('daftar') || lowQuery.includes('cara')) {
+                response = "Untuk mendaftar PPDB, silakan buka menu PPDB mandiri pada website, isi formulir siswa dan wali murid, sertakan simulasi dokumen berkas, lalu cetak bukti kartu nomor registrasi pendaftaran.";
+            } else if (lowQuery.includes('syarat') || lowQuery.includes('berkas') || lowQuery.includes('dokumen')) {
+                response = "Dokumen berkas yang wajib dilampirkan adalah salinan cetak Kartu Keluarga (KK), Akta Kelahiran, dan pas foto berwarna calon siswa.";
+            } else if (lowQuery.includes('biaya') || lowQuery.includes('bayar') || lowQuery.includes('spp') || lowQuery.includes('gratis')) {
+                response = "Seluruh kegiatan KBM reguler di SDN 1 Tanjung Anom bebas biaya bulanan sekolah dasar negeri (Gratis).";
+            } else if (lowQuery.includes('lokasi') || lowQuery.includes('peta') || lowQuery.includes('alamat') || lowQuery.includes('rute')) {
+                response = "Lokasi sekolah ada di Jl. Raya Tanjung Anom, Kec. Ambarawa, Kabupaten Pringsewu. Lihat rute lengkap pada widget Google Maps di bagian bawah website.";
+            } else if (lowQuery.includes('coding') || lowQuery.includes('program') || lowQuery.includes('unggul')) {
+                response = "Program unggulan utama kami meliputi Tahfidz Juz Amma, Kelas Coding Dasar (melatih logika Scratch), Pramuka Aktif, kesenian Angklung, dan Gerakan Pojok Literasi.";
+            } else if (lowQuery.includes('kepala') || lowQuery.includes('arif')) {
+                response = "Kepala Sekolah UPT SDN 1 Tanjung Anom adalah bapak **Arif Wiranata, S.Pd.**";
+            }
+
+            setTimeout(() => {
+                appendBotMessage(response);
+            }, 600);
+        }
+
+        function appendUserMessage(text) {
+            const chatMessages = document.getElementById('chat-messages');
+            const userHTML = `
+                <div class="bg-royal text-white p-3 rounded-l-xl rounded-br-xl shadow-sm max-w-[85%] ml-auto text-right">
+                    ${text}
+                </div>
+            `;
+            chatMessages.insertAdjacentHTML('beforeend', userHTML);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function appendBotMessage(text) {
+            const chatMessages = document.getElementById('chat-messages');
+            const botHTML = `
+                <div class="bg-white dark:bg-slate-800 p-3 rounded-r-xl rounded-bl-xl shadow-sm border max-w-[85%] text-left">
+                    ${text}
+                </div>
+            `;
+            chatMessages.insertAdjacentHTML('beforeend', botHTML);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+    </script>
+</body>
+</html>
